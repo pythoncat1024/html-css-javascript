@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>整体布局2</title>
+
+    <style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .header, .footer {
+            height: 100px;
+            background-color: #666666;
+        }
+
+        .main {
+            height: 300px;
+        }
+
+        .main .left, .main .right {
+            width: 100px;
+            height: 300px;
+            background-color: #3cbe7f;
+            float: left;
+        }
+
+        .main .middle {
+            width: 300px;
+            height: 300px;
+            float: left;
+
+        }
+
+        .main .middle .up, .main .middle .down {
+            height: 50%;
+        }
+
+        .main .middle .up {
+            background-color: lightpink;
+        }
+
+        .main .middle .down {
+            background-color: wheat;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+
+    <div class="header"></div>
+
+    <div class="main">
+        <div class="left"></div>
+        <div class="middle">
+            <div class="up"></div>
+            <div class="down"></div>
+        </div>
+        <div class="right"></div>
+    </div>
+    <div class="footer"></div>
+</div>
+
+</body>
+</html>

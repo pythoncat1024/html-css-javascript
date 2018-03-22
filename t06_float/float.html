@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动使用</title>
+
+    <style type="text/css">
+
+        .box .content {
+            background-color: #eeeeee;
+            width: 600px;
+        }
+
+        .box .content img {
+            float: left; /*文字环绕效果的实现*/
+        }
+
+        /*------导航效果 float -----*/
+        .nav {
+            background-color: lightpink;
+            width: 800px;
+            height: 40px;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        .nav li {
+            float: left;
+        }
+
+        .nav div {
+            height: 40px;
+            width: 300px;
+            background-color: #00000000;
+            margin: 0 auto;
+        }
+
+        .nav li a {
+            display: inline-block;
+            height: 40px;
+            padding: 0 10px;
+            font: 14px/40px simplified;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="nav">
+        <div>
+
+            <ul>
+                <li><a href="#">百度</a></li>
+                <li><a href="#">百度一下</a></li>
+                <li><a href="#">谷歌</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="content">
+        <img src="images/1.jpg" alt="info">
+
+        <p>圣剑啊，你有看到那个敌人吗？</p>
+        <p>不要被欲望玷污！</p>
+        <p>圣剑啊，你有看到那个敌人吗？</p>
+        <p>不要被欲望玷污！</p>
+        <p>圣剑啊，你有看到那个敌人吗？</p>
+        <p>不要被欲望玷污！</p>
+        <p>圣剑啊，你有看到那个敌人吗？</p>
+        <p>不要被欲望玷污！</p>
+        <p>圣剑啊，你有看到那个敌人吗？</p>
+        <p>不要被欲望玷污！</p>
+        <p>圣剑啊，你有看到那个敌人吗？</p>
+        <p>不要被欲望玷污！</p>
+    </div>
+</div>
+</body>
+</html>
