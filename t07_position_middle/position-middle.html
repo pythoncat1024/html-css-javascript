@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位盒子的水平居中显示</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: #3cbe7f;
+            height: 500px;
+            position: relative;
+        }
+
+        .nav {
+            width: 60%;
+            background-color: #666666;
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+            /*margin: 0 auto;*/ /*对于绝对定位的盒子，此方式不适用（因为脱离了标准文档流）*/
+            left: 50%;
+            /* 先像左边位移 50% */
+            margin-left: -30%;
+            /* 再向回去走自身宽度的一半 */
+            /*这两者结合，就可以让定位的盒子水平居中了*/
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="nav">
+
+    </div>
+</div>
+</body>
+</html>
