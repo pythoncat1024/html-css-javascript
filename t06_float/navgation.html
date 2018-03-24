@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏</title>
+
+    <style type="text/css">
+        body, div, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav {
+            height: 40px;
+            margin-top: 30px;
+            background-color: #cecece;
+        }
+
+        .nav-con {
+            height: 40px;
+            margin: 0 auto;
+            width: 60%;
+            position: relative;
+        }
+
+        .nav-con .icon {
+            position: absolute;
+            left: 40px;
+            bottom: 28px;
+        }
+
+        li {
+            float: left;
+            padding: 0 20px;
+            border-right: 1px solid #6ca8cd;
+            background-color: #eeeeee;
+        }
+
+        .clearfix:after {
+            content: ".";
+            display: inline-block;
+            visibility: hidden;
+            height: 0;
+            clear: both;
+        }
+
+        a {
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #3cbe7f;
+        }
+
+        a:hover {
+            color: #ff9f20;
+        }
+
+    </style>
+</head>
+<body>
+<div class="nav clearfix">
+    <div class="nav-con">
+        <ul class="clearfix">
+            <li><a href="#">新浪一下</a></li>
+            <li><a href="#">谷歌一下</a></li>
+            <li><a href="#">搜狗一下</a></li>
+            <li><a href="#">必应一下</a></li>
+            <li><a href="#">草榴一下</a></li>
+        </ul>
+        <div class="icon">
+            <img src="images/vb.jpg" alt="png">
+        </div>
+    </div>
+</div>
+</body>
+</html>
