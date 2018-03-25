@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>logo 中超链接文字的隐藏</title>
+
+    <style type="text/css">
+        body, div, h1, a, img {
+            padding: 0;
+            margin: 0;
+            -webkit-margin-before: 0;
+            -webkit-margin-after: 0;
+            list-style: none;
+            border: none;
+        }
+
+        .logo {
+            margin: 0;
+            padding: 0;
+            height: 76px;
+            width: 143px;
+            background-color: #eeeeee;
+            position: absolute;
+        }
+
+        h1 {
+            width: 143px;
+            height: 76px;
+            /*display: inline-block;*/
+        }
+
+        a, span {
+
+            display: inline-block;
+            background: url("logo.png");
+            font-size: 12px;
+            width: 143px;
+            height: 76px;
+            text-indent: -5000px;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            /*为什么要用子绝父相呢？ 发现 h1 里面加上 a 好像会产生一个向下的位移，在当前的chrome 尝试是会出现这种情况的*/
+        }
+    </style>
+</head>
+<body>
+<div class="logo">
+    <h1>
+        <a href="http://www.baidu.com">搜狐</a>
+        <!--<div style="clear: both"></div>-->
+    </h1>
+
+    <div>hhhh</div>
+    <div>hhhh</div>
+    <div>hhhh</div>
+    <div>hhhh</div>
+    <div>hhhh</div>
+</div>
+</body>
+</html>

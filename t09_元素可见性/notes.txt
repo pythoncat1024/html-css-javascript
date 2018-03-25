@@ -1,0 +1,5 @@
+ visibility: hidden;  --> 隐藏元素，但是还占据原来的位置
+ display: none;       --> 隐藏元素，但是不占据原来的位置
+ display: block;      --> 显示元素。
+
+ display: none/block ; 这两个属性尝尝配合js使用，来控制元素的显示与隐藏
