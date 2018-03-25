@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航练习</title>
+
+    <style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0 none;
+            outline: 0 none;
+        }
+
+        .header {
+            width: 80%;
+            height: 39px;
+            /*background-color: #bbf0e2;*/
+            margin: 20px auto;
+        }
+
+        .header .left {
+            width: 179px;
+            height: 39px;
+            background: url("images/logo.jpg") no-repeat center;
+            float: left;
+        }
+
+        .header .left h1, .header .left h1 a {
+            display: inline-block;
+            width: 179px;
+            height: 39px;
+            vertical-align: middle;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            font-style: normal;
+            text-align: center;
+            color: red;
+            text-indent: -8000px;
+        }
+
+        .header .right {
+            height: 30px;
+            float: right;
+            border: 1px solid #ececec;
+        }
+
+        .header input[type=text] {
+            vertical-align: top;
+            width: 165px;
+            height: 30px;
+        }
+
+        .header input[type=button] {
+            width: 30px;
+            height: 30px;
+            background: url("images/search2.jpg") no-repeat left top;
+
+        }
+        .header input[type=button]:hover{
+            user-focus: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="left">
+        <h1>
+            <a href="#">首页</a>
+        </h1>
+    </div>
+
+    <div class="right"><input type="text" placeholder="请输入..."><input type="button"></div>
+</div>
+</body>
+</html>
