@@ -24,3 +24,8 @@ CSS 优先级
 盒子模型：
 
     盒子宽度 = width + padding-left + padding-right + border-left-width + border-right-width ;
+
+页面布局：
+   * 文档流
+   * 浮动
+   * 定位
