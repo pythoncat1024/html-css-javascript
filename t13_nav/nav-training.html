@@ -13,11 +13,34 @@
             outline: 0 none;
         }
 
+        ul, li {
+            list-style: none;
+        }
+
+        img {
+            border: none;
+            outline-style: none;
+        }
+
+        .clearfix:after {
+            content: ".";
+            display: inline-block;
+            visibility: hidden;
+            height: 0;
+            clear: both;
+        }
+
+        .ver-middle {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /*header--------------------------##*/
         .header {
             width: 80%;
             height: 39px;
             /*background-color: #bbf0e2;*/
-            margin: 20px auto;
+            margin: 20px auto 0;
         }
 
         .header .left {
@@ -34,7 +57,7 @@
             vertical-align: middle;
         }
 
-        a {
+        div h1 a {
             text-decoration: none;
             font-size: 16px;
             font-style: normal;
@@ -61,11 +84,263 @@
             background: url("images/search2.jpg") no-repeat left top;
 
         }
-        .header input[type=button]:hover{
+
+        .header input[type=button]:hover {
             user-focus: pointer;
         }
+
+        /*nav------------------------------#*/
+        .nav {
+            width: 100%;
+            height: 55px;
+            background: url("images/nav_bg.png") repeat-x center;
+            border-top: 1px solid #eaeaea;
+        }
+
+        .nav-con {
+            width: 980px;
+            height: 55px;
+            margin: 0 auto;
+            /*background-color: red;*/
+        }
+
+        .nav-con ul {
+            width: 980px;
+            height: 55px;
+            vertical-align: middle;
+        }
+
+        .nav-con ul li {
+            float: left;
+        }
+
+        .nav-con ul li a {
+            display: inline-block;
+            text-decoration: none;
+            height: 55px;
+            padding: 0 20px;
+            background: url("images/nav_bg-line.png") no-repeat right center;
+            font-size: 12px;
+            font-weight: 800;
+            color: #333333;
+            font-family: "Microsoft Sans Serif", serif;
+            line-height: 55px;
+        }
+
+        .nav-con ul li a:hover {
+            color: yellowgreen;
+        }
+
+        /*banner-------------------------#*/
+        .banner {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        /*--line text--------------------*/
+        .line-text {
+            background-color: #eeeeee;
+            border-top: 1px solid #cecece;
+            border-bottom: 1px solid #cecece;
+            margin: 0 0 10px 0;
+        }
+
+        .line-text-con {
+            width: 980px;
+            margin: 0 auto;
+            height: 25px;
+        }
+
+        .line-text-con p {
+            display: inline-block;
+            height: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            vertical-align: middle;
+        }
+
+        .line-text-con div {
+            display: inline-block;
+            float: right;
+            width: 100px;
+            height: 25px;
+            vertical-align: middle;
+        }
+
+        .line-text-con div a {
+            display: inline-block;
+            vertical-align: middle;
+            width: 16px;
+            height: 25px;
+            line-height: 20px;
+        }
+
+        .zone {
+            background: url("images/zone.png") no-repeat center;
+            float: right;
+            margin-left: 8px;
+        }
+
+        .weibo {
+            background: url("images/weibo.png") no-repeat center;
+            float: right;
+            margin-left: 8px;
+        }
+
+        .sina {
+            background: url("images/xinlang.png") no-repeat center;
+            float: right;
+            margin-left: 8px;
+        }
+
+        .renren {
+            background: url("images/renren.png") no-repeat center;
+            float: right;
+            margin-left: 8px;
+        }
+
+        /*footer------------------------#*/
+        .footer {
+            width: 980px;
+            height: 226px;
+            margin: 0 auto;
+        }
+
+        .footer dl dt,
+        .footer dl dd {
+            font-size: 12px;
+            font-family: serif;
+            font-weight: 700;
+            margin: 0 10px;
+            border-bottom: 1px dashed #cecece;
+        }
+
+        .footer dl {
+            padding: 10px 10px 20px 10px;
+        }
+
+        .footer dl dt {
+            margin: 0 0 8px 0;
+            font-family: serif;
+            color: yellowgreen;
+            font-weight: 700;
+            background: url("images/o.jpg") no-repeat left center;
+            padding-left: 20px;
+            border: none;
+        }
+
+        .footer dl dd a {
+            display: inline-block;
+
+            /*width: 355px;*/
+            height: 28px;
+            line-height: 28px;
+            text-decoration: none;
+            color: #333333;
+        }
+
+        .footer-left, .footer-middle, .footer-right {
+            border: 1px solid #ececec;
+            height: 226px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .footer-left {
+            width: 268px;
+            position: relative;
+        }
+
+        .footer-left .left-pic {
+            position: absolute;
+            left: 23px;
+            top: 123px;
+        }
+
+        .footer-left .right-pic {
+            position: absolute;
+            right: 23px;
+            top: 123px;
+        }
+
+        .footer-left .middle-pic {
+            position: absolute;
+            left: 35px;
+            top: 65px;
+        }
+
+        .footer-middle {
+            width: 375px;
+        }
+
+        .footer-right {
+            width: 270px;
+        }
+
+        .footer-right dl dd {
+            height: 12px;
+            line-height: 12px;
+            margin-bottom: 8px;
+            border-bottom: none;
+            border-left: 4px solid yellowgreen;
+            padding-left: 10px;
+        }
+
+        .footer-right dl dd a {
+
+            height: 12px;
+            line-height: 12px;
+            margin-bottom: 8px;
+        }
+
+        .footer-right .address {
+            font-size: 12px;
+            padding-left: 10px;
+        }
+
+        .footer-middle .strong-color {
+            color: red;
+        }
+
+        /*####bottom---------------------#*/
+        .bottom-div {
+            margin-top: 20px;
+            height: 222px;
+            background-color: #333333;
+        }
+
+        .bottom-div .bot-inner {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        .bot-inner dt a {
+            font-weight: 700;
+
+            color: #c7c7c7;
+            font-size: 12px;
+            margin-bottom: 10px;
+            text-decoration: none;
+
+        }
+
+        .bot-inner dd a {
+            font-weight: 400;
+            font-size: 12px;
+            text-decoration: none;
+            color: #707070;
+        }
+
+        .fl-left {
+            display: inline-block;
+            float: left;
+            margin: 20px 40px 20px 0;
+        }
+
     </style>
 </head>
+
 <body>
 <div class="header">
     <div class="left">
@@ -76,5 +351,91 @@
 
     <div class="right"><input type="text" placeholder="请输入..."><input type="button"></div>
 </div>
+<div class="nav">
+    <div class="nav-con">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">智能手机</a></li>
+            <li><a href="#">平板电脑</a></li>
+            <li><a href="#">配件</a></li>
+            <li><a href="#">服务支持</a></li>
+            <li><a href="#">关于尚河</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="banner"><img src="images/banner.jpg" alt=""></div>
+
+<div class="line-text">
+    <div class="line-text-con">
+        <p>最新公告：尚合Aone智能手机入网证已获取工信部门审批下发。尚合官网</p>
+        <div class="share">
+            <a class="zone" href="#"></a>
+            <a class="weibo" href="#"></a>
+            <a class="sina" href="#"></a>
+            <a class="renren" href="#"></a></div>
+    </div>
+</div>
+
+<div class="footer clearfix">
+    <div class="footer-left">
+        <dl>
+            <dt>新品发布</dt>
+        </dl>
+
+        <div class="img-container">
+            <img class="left-pic ver-middle" src="images/left.png">
+            <img class="middle-pic ver-middle" src="images/home_hot_01.png">
+            <img class="right-pic ver-middle" src="images/right.png">
+        </div>
+    </div>
+    <div class="footer-middle">
+
+        <dl>
+            <dt>新闻中心</dt>
+            <dd><a class="strong-color" href="#">致歉公告</a></dd>
+            <dd><a href="#">首批尚合Aonet已全部售馨!</a></dd>
+            <dd><a href="#">【媒体报导】国产高性价比 尚合Aonet四核手机评测</a></dd>
+            <dd><a href="#">我司产品已经通过了国家强制性产品3C认证</a></dd>
+            <dd><a href="#">尚合Aone智能手机入网证已经获工信部门审批下发.</a></dd>
+            <dd><a href="#">我司通过ISO9001:2008国际质量管理体系认证</a></dd>
+        </dl>
+    </div>
+    <div class="footer-right">
+        <dl>
+            <dt>技术与支持</dt>
+            <dd><a href="#">售后服务</a></dd>
+            <dd><a href="#">投诉与建议</a></dd>
+            <dd><a href="#">联保网点</a></dd>
+            <dd><a href="#">常见问题FAQ</a></dd>
+
+        </dl>
+        <p class="address">深圳市汇聚众合科技发展有限公司<br/>
+            服务热线：400-633-7922</p>
+    </div>
+</div>
+
+<div class="bottom-div">
+    <div class="bot-inner">
+        <dl class="one fl-left">
+            <dt><a href="#">尚河首页</a></dt>
+            <dd><a href="#">尚河首页</a></dd>
+        </dl>
+
+        <dl class="two fl-left">
+            <dt><a href="#">尚河首页</a></dt>
+            <dd><a href="#">尚河首页</a></dd>
+        </dl>
+        <dl class="three fl-left">
+            <dt><a href="#">尚河首页</a></dt>
+            <dd><a href="#">尚河首页</a></dd>
+        </dl>
+        <dl class="four fl-left">
+            <dt><a href="#">尚河首页</a></dt>
+            <dd><a href="#">尚河首页</a></dd>
+        </dl>
+    </div>
+</div>
+
 </body>
 </html>
