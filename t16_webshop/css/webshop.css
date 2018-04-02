@@ -1,0 +1,353 @@
+/*init css*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, dl, dt, dd, ol {
+    list-style: none;
+}
+
+img, input {
+    border: 0 none;
+}
+
+input {
+    outline: none 0;
+}
+
+/*for special init*/
+
+* {
+    font: 12px "Songti SC";
+
+}
+
+.clear-fix:after {
+    content: ".";
+    display: inline-block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+/*for top container*/
+.top-full-container {
+    height: 28px;
+    width: 100%;
+    background-color: #f7f7f7;
+    border: 1px solid #cecece;
+}
+
+.top-container {
+    height: 28px;
+    width: 970px;
+    margin: 0 auto;
+
+}
+
+.top-container .welcome {
+    float: left;
+    /*vertical-align: middle;*/ /*脱标流无效*/
+    height: 28px;
+    line-height: 28px;
+}
+
+.top-container .top-container-ul {
+    display: inline-block;
+    float: right;
+}
+
+.top-container .top-container-li {
+    float: left;
+}
+
+.top-container .top-container-li-a {
+    display: inline-block;
+    height: 28px;
+    padding: 0 10px 0 10px;
+    background: url("../images/sj.png") no-repeat right center;
+    text-decoration: none;
+    line-height: 28px;
+    color: #666666;
+}
+
+.top-container .top-container-li-a:hover {
+    color: #3cbe7f;
+}
+
+/*for logo part*/
+
+
+.main-header {
+    width: 970px;
+    height: 84px;
+    margin: 10px auto 0;
+}
+
+.main-header .main-header-logo {
+    float: left;
+}
+
+.main-header .main-header-search {
+    float: right;
+    background-color: #f7f7f7;
+    border: 1px solid #cecece;
+    padding: 5px;
+    height: 30px;
+    margin-top: 22px;
+}
+
+.main-header-search .main-header-search-text {
+    height: 30px;
+    width: 432px;
+    border: 1px solid #cecece;
+    vertical-align: middle;
+
+}
+
+.main-header-search .main-header-search-btn {
+    width: 99px;
+    height: 30px;
+    background: url("../images/serch.png") no-repeat center;
+    vertical-align: middle;
+    margin-left: -3px; /*好像默认有3px的间隔*/
+}
+
+/*init css*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, dl, dt, dd, ol {
+    list-style: none;
+}
+
+img, input {
+    border: 0 none;
+}
+
+input {
+    outline: none 0;
+}
+
+/*for special init*/
+
+* {
+    font: 12px "Songti SC";
+
+}
+
+.clear-fix:after {
+    content: ".";
+    display: inline-block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+/*for top container*/
+.top-full-container {
+    height: 28px;
+    width: 100%;
+    background-color: #f7f7f7;
+    border: 1px solid #cecece;
+}
+
+.top-container {
+    height: 28px;
+    width: 970px;
+    margin: 0 auto;
+
+}
+
+.top-container .welcome {
+    float: left;
+    /*vertical-align: middle;*/ /*脱标流无效*/
+    height: 28px;
+    line-height: 28px;
+}
+
+.top-container .top-container-ul {
+    display: inline-block;
+    float: right;
+}
+
+.top-container .top-container-li {
+    float: left;
+}
+
+.top-container .top-container-li-a {
+    display: inline-block;
+    height: 28px;
+    padding: 0 10px 0 10px;
+    background: url("../images/sj.png") no-repeat right center;
+    text-decoration: none;
+    line-height: 28px;
+    color: #666666;
+}
+
+.top-container .top-container-li-a:hover {
+    color: #3cbe7f;
+}
+
+/*for main body */
+
+/*for main body header*/
+
+.main-header {
+    width: 970px;
+    height: 84px;
+    margin: 10px auto 0;
+}
+
+.main-header .main-header-logo {
+    float: left;
+}
+
+.main-header .main-header-search {
+    float: right;
+    background-color: #f7f7f7;
+    border: 1px solid #cecece;
+    padding: 5px;
+    height: 30px;
+    margin-top: 22px;
+}
+
+.main-header-search .main-header-search-text {
+    height: 30px;
+    width: 432px;
+    border: 1px solid #cecece;
+    vertical-align: middle;
+
+}
+
+.main-header-search .main-header-search-btn {
+    width: 99px;
+    height: 30px;
+    background: url("../images/serch.png") no-repeat center;
+    vertical-align: middle;
+    margin-left: -3px; /*好像默认有3px的间隔*/
+}
+
+/*for main nav*/
+.main-nav-container {
+    width: 970px;
+    height: 28px;
+    margin: 10px auto;
+    border-bottom: 3px solid #0266a2;
+}
+
+.main-nav-ul-li {
+    float: left;
+}
+
+.main-nav-li-a {
+    display: inline-block;
+    height: 28px;
+    text-decoration: none;
+    line-height: 28px;
+    padding: 0 10px 0;
+    color: #0266a2;
+}
+
+.main-nav-li-a:hover {
+    background-color: #0266a2;
+    color: #ffffff;
+}
+
+/*for main business market */
+
+.business-market {
+    width: 970px;
+    height: 212px;
+    margin: 0 auto;
+}
+
+/*for let sidebar */
+.business-market-left-sidebar {
+    width: 200px;
+    height: 212px;
+    float: left;
+    background-color: #EBF0F6;
+}
+
+.business-market-left-sidebar dt {
+    height: 28px;
+    background-color: #0266a2;
+    color: white;
+    /*font-weight: 800;*/
+    line-height: 28px;
+    padding: 0 10px;
+}
+
+.business-market-left-sidebar a {
+    display: inline-block;
+    width: 153px;
+    height: 28px;
+    text-decoration: none;
+    color: #666666;
+    line-height: 28px;
+    margin-left: 37px;
+}
+
+#left-sidebar-icon2 {
+    background: url("../images/icon_1.png") no-repeat 10px center;
+}
+
+#left-sidebar-icon3 {
+    background: url("../images/icon_2.png") no-repeat 10px center;
+}
+
+#left-sidebar-icon4 {
+    background: url("../images/icon_3.png") no-repeat 10px center;
+}
+
+#left-sidebar-icon5 {
+    background: url("../images/icon_4.png") no-repeat 10px center;
+}
+
+#left-sidebar-icon6 {
+    background: url("../images/icon_5.png") no-repeat 10px center;
+}
+
+#left-sidebar-icon7 {
+    background: url("../images/icon_6.png") no-repeat 10px center;
+}
+
+/*for main banner */
+.business-market-banner {
+    width: 520px;
+    height: 212px;
+    float: left;
+}
+
+.business-market-banner .business-market-banner-img {
+    width: 520px;
+    height: 212px;
+}
+
+/*for main right sidebar*/
+.business-market-right-sidebar {
+    width: 230px;
+    height: 212px;
+    float: left;
+}
+
+.right-sidebar-up {
+    display: block;
+    margin-bottom: 10px;
+}
+
+h2.building-materials {
+    width: 960px;
+    height: 36px;
+    background-color: #EBF0F6;
+    margin: 20px auto 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 36px;
+    border-top: 2px solid #c3d6e4;
+}
