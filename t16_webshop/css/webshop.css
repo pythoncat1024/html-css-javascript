@@ -113,25 +113,6 @@ input {
     vertical-align: middle;
     margin-left: -3px; /*好像默认有3px的间隔*/
 }
-
-/*init css*/
-* {
-    margin: 0;
-    padding: 0;
-}
-
-ul, li, dl, dt, dd, ol {
-    list-style: none;
-}
-
-img, input {
-    border: 0 none;
-}
-
-input {
-    outline: none 0;
-}
-
 /*for special init*/
 
 * {

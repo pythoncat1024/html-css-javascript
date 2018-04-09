@@ -6,30 +6,278 @@
     <link rel="stylesheet" href="css/webshop.css" type="text/css"/>
 
     <style type="text/css">
-        .logo {
-            height: 84px;
+        .building {
             width: 970px;
+            height: 346px;
             margin: 0 auto;
         }
 
-        .logo-pic {
+        .building-container {
+            /*display: inline-block;*/
+            width: 730px;
+            height: 346px;
+            border: 1px solid #cecece;
             float: left;
         }
 
-        .logo-search {
-            float: right;
-            height: 30px;
-            width: 519px;
-            margin-top: 28px;
-            background-color: #f5f5f5;
-            border: 1px solid #c9c9c9;
-            padding: 5px;
+        .building-no1, .building-no2, .building-no3, .building-no4 {
+            /*display: inline-block;*/
+            width: 345px;
+            height: 153px;
+            float: left;
+            margin: 20px 0 0 20px;
+            /*background-color: red;*/
         }
-        .logo-search .search-input {
-            width: 420px;
-            height: 30px;
-            border: 1px solid #c9c9c9;
+
+        .building-no1 {
+            /*background-color: #6ca8cd;*/
+        }
+
+        .building-item-left {
+            float: left;
+        }
+
+        .building-img-container {
+            display: table-cell;
             vertical-align: middle;
+            width: 96px;
+            height: 102px;
+            border: 1px solid #cecece;
+            text-align: center;
+        }
+
+        .btn-buy {
+            width: 98px;
+            height: 26px;
+            margin-top: 10px;
+            background: url("./images/buy.png") no-repeat center;
+        }
+
+        .building-item-text {
+            margin-left: 10px;
+            float: left;
+        }
+
+        .building-item-text p, .building-item-text span {
+            font-size: 14px;
+        }
+
+        p.text1 {
+
+            margin: 10px 0;
+        }
+
+        p.text2 {
+
+            margin-bottom: 5px;
+        }
+
+        .building-item-text span.price-new {
+            /*不清楚为什么这样写会无效！！！*/
+            color: #c3d6e4;
+        }
+
+        .building-item-text span {
+            color: #ff0000;
+        }
+
+        /*.price-new {*/
+        /*!*display: inline-block;*!*/
+        /*color: red;*/
+        /*margin-right: 10px;*/
+        /*!*!important;*!*/
+        /*}*/
+
+        span.price-old {
+        }
+
+        div.line {
+            margin-top: 173px;
+            height: 1px;
+            background-color: #cecece;
+        }
+
+        .building-sidebar {
+            display: inline-block;
+            width: 230px;
+            height: 346px;
+            border: 1px solid #cecece;
+            float: right;
+            /*background-color: red;*/
+        }
+
+        .building-sidebar dt {
+            border-bottom: 1px solid #cecece;
+            height: 28px;
+            line-height: 28px;
+            padding-left: 10px;
+        }
+
+        .building-sidebar a {
+            display: inline-block;
+            padding-left: 24px;
+            width: 100%;
+            height: 28px;
+            line-height: 28px;
+            background: url("./images/li_bg.png") no-repeat 10px center;
+            text-decoration: none;
+            color: #333333;
+        }
+
+        /*儿童安全椅*/
+        .children-sit {
+            width: 970px;
+            height: 322px;
+            margin: 0 auto;
+        }
+
+        .children-sit-container {
+            float: left;
+            width: 722px;
+            height: 302px;
+            /*background-color: #00b0e7;*/
+        }
+
+        .children-sit-container h3 {
+            display: inline-block;
+            width: 722px;
+            height: 25px;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: right;
+            color: #00b0e7;
+            font-weight: 700;
+            margin-bottom: -1px;
+            background: url("./images/et.png") no-repeat left center;
+            border-bottom: 3px solid #00b0e7;
+        }
+
+        .children-item {
+            overflow: hidden;
+            float: left;
+            width: 170px;
+            margin: 10px 0 10px 10px;
+            height: 302px;
+            text-align: center;
+        }
+
+        .children-item p.children-text1 {
+            margin: 5px;
+        }
+
+        .children-item p.children-text2 {
+            margin-bottom: 5px;
+            color: #999;
+        }
+
+        .children-item p.children-text3 {
+            margin-bottom: 5px;
+            color: #999;
+        }
+
+        .children-item del {
+            color: #990000;
+        }
+
+        .children-item-border {
+            /*margin-top: 28px;*/
+            width: 722px;
+            height: 294px;
+            border: 1px solid #cecece;
+        }
+
+        .children-sit-sidebar {
+            float: right;
+            width: 218px;
+            height: 322px;
+            border: 1px solid #cecece;
+            overflow: hidden;
+        }
+
+        .children-right-bottom {
+            margin-top: 20px;
+        }
+
+        .split-line {
+            width: 970px;
+            margin: 10px auto;
+            height: 1px;
+            background-color: #cecece;
+        }
+
+        .friends-link {
+            width: 970px;
+            margin: 20px auto 0;
+        }
+
+        .friend-hint {
+            float: left;
+            width: 60px;
+        }
+
+        .all-link {
+            width: 910px;
+        }
+
+        .all-link, .all-link {
+            float: left;
+        }
+
+        .friends-link dd {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .friends-link dd a {
+            text-decoration: none;
+            color: #666666;
+        }
+
+        .friends-link dd a:hover {
+            color: #990000;
+            text-decoration: underline;
+        }
+
+        .heavy-split {
+            height: 3px;
+            width: 970px;
+            margin: 0 auto;
+            background-color: #00b0e7;
+
+        }
+
+        .about-us {
+            width: 700px;
+            height: 40px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .about-us li {
+            margin: 10px 0;
+            float: left;
+            /*margin: 15px 10px;*/
+            border-right: 1px solid #cecece;
+        }
+
+        .about-us a {
+            display: inline-block;
+            padding-right: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: #666666;
+        }
+
+        .about-us a:hover {
+            color: #990000;
+            text-decoration: underline;
+        }
+
+        p.bottom1, p.bottom2 {
+            width: 100%;
+            margin: 5px auto;
+            text-align: center;
+            display: block;
         }
     </style>
 </head>
@@ -101,5 +349,354 @@
     </div>
 </div>
 <h2 class="building-materials">建筑材料</h2>
+<div class="building">
+    <div class="building-container">
+        <div class="building-no1">
+            <div class="building-item-left">
+                <div class="building-img-container">
+                    <img src="./images/c1.png" alt="c1" class="building-item-img">
+                </div>
+                <input type="button" class="btn-buy">
+            </div>
+            <div class="building-item-text">
+
+                <p class="text1">
+                    好太太晾衣架 铝钛合金 升降双杆
+                </p>
+                <p class="text2">
+                    自动换挡 安全耐用<br/>
+                    稳定性好 抗氧化强
+                </p>
+                <p class="text3">
+                    <span class="price-now">239.00 </span>
+                    <del class="price-old">¥386.00</del>
+                </p>
+            </div>
+        </div>
+        <div class="building-no2">
+            <div class="building-item-left">
+                <div class="building-img-container">
+                    <img src="./images/c2.png" alt="c1" class="building-item-img">
+                </div>
+                <input type="button" class="btn-buy">
+            </div>
+            <div class="building-item-text">
+
+                <p class="text1">
+                    好太太晾衣架 铝钛合金 升降双杆
+                </p>
+                <p class="text2">
+                    自动换挡 安全耐用<br/>
+                    稳定性好 抗氧化强
+                </p>
+                <p class="text3">
+                    <span class="price-now">239.00 </span>
+                    <del class="price-old">¥386.00</del>
+                </p>
+            </div>
+        </div>
+        <div class="building-no3">
+            <div class="building-item-left">
+                <div class="building-img-container">
+                    <img src="./images/c3.png" alt="c1" class="building-item-img">
+                </div>
+                <input type="button" class="btn-buy">
+            </div>
+            <div class="building-item-text">
+
+                <p class="text1">
+                    好太太晾衣架 铝钛合金 升降双杆
+                </p>
+                <p class="text2">
+                    自动换挡 安全耐用<br/>
+                    稳定性好 抗氧化强
+                </p>
+                <p class="text3">
+                    <span class="price-now">239.00 </span>
+                    <del class="price-old">¥386.00</del>
+                </p>
+            </div>
+        </div>
+        <div class="building-no4">
+            <div class="building-item-left">
+                <div class="building-img-container">
+                    <img src="./images/c4.png" alt="c1" class="building-item-img">
+                </div>
+                <input type="button" class="btn-buy">
+            </div>
+            <div class="building-item-text">
+
+                <p class="text1">
+                    好太太晾衣架 铝钛合金 升降双杆
+                </p>
+                <p class="text2">
+                    自动换挡 安全耐用<br/>
+                    稳定性好 抗氧化强
+                </p>
+                <p class="text3">
+                    <span class="price-now">239.00 </span>
+                    <del class="price-old">¥386.00</del>
+                </p>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+    </div>
+    <div class="building-sidebar">
+        <dl>
+            <dt>建材资讯</dt>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+        </dl>
+    </div>
+</div>
+
+<h2 class="building-materials">儿童安全椅</h2>
+<div class="children-sit">
+    <div class="children-sit-container">
+        <h3>详情点击>></h3>
+
+        <div class="children-item">
+            <img src="./images/et01.png" alt="">
+            <p class="children-text1">英国百代适-至尊者（带
+                ISOFIX）奔驰宝马专用</p>
+            <p class="children-text2">适合年龄9个月-4岁</p>
+            <p class="children-text3">市场价：
+                <del>¥5580</del>
+            </p>
+            <p class="children-text4">直销价：
+                <del>¥3380</del>
+            </p>
+
+        </div>
+        <div class="children-item">
+            <img src="./images/et01.png" alt="">
+            <p class="children-text1">英国百代适-至尊者（带
+                ISOFIX）奔驰宝马专用</p>
+            <p class="children-text2">适合年龄9个月-4岁</p>
+            <p class="children-text3">市场价：
+                <del>¥5580</del>
+            </p>
+            <p class="children-text4">直销价：
+                <del>¥3380</del>
+            </p>
+
+        </div>
+        <div class="children-item">
+            <img src="./images/et01.png" alt="">
+            <p class="children-text1">英国百代适-至尊者（带
+                ISOFIX）奔驰宝马专用</p>
+            <p class="children-text2">适合年龄9个月-4岁</p>
+            <p class="children-text3">市场价：
+                <del>¥5580</del>
+            </p>
+            <p class="children-text4">直销价：
+                <del>¥3380</del>
+            </p>
+
+        </div>
+        <div class="children-item">
+            <img src="./images/et01.png" alt="">
+            <p class="children-text1">英国百代适-至尊者（带
+                ISOFIX）奔驰宝马专用</p>
+            <p class="children-text2">适合年龄9个月-4岁</p>
+            <p class="children-text3">市场价：
+                <del>¥5580</del>
+            </p>
+            <p class="children-text4">直销价：
+                <del>¥3380</del>
+            </p>
+
+        </div>
+        <div class="children-item-border">
+        </div>
+    </div>
+    <div class="children-sit-sidebar">
+        <img src="./images/et_right.png" alt="" class="children-right">
+        <img src="./images/et_right_bottom.png" alt="" class="children-right-bottom">
+    </div>
+</div>
+
+
+<h2 class="building-materials">建筑材料</h2>
+<div class="building">
+    <div class="building-container">
+        <div class="building-no1">
+            <div class="building-item-left">
+                <div class="building-img-container">
+                    <img src="./images/c1.png" alt="c1" class="building-item-img">
+                </div>
+                <input type="button" class="btn-buy">
+            </div>
+            <div class="building-item-text">
+
+                <p class="text1">
+                    好太太晾衣架 铝钛合金 升降双杆
+                </p>
+                <p class="text2">
+                    自动换挡 安全耐用<br/>
+                    稳定性好 抗氧化强
+                </p>
+                <p class="text3">
+                    <span class="price-now">239.00 </span>
+                    <del class="price-old">¥386.00</del>
+                </p>
+            </div>
+        </div>
+        <div class="building-no2">
+            <div class="building-item-left">
+                <div class="building-img-container">
+                    <img src="./images/c2.png" alt="c1" class="building-item-img">
+                </div>
+                <input type="button" class="btn-buy">
+            </div>
+            <div class="building-item-text">
+
+                <p class="text1">
+                    好太太晾衣架 铝钛合金 升降双杆
+                </p>
+                <p class="text2">
+                    自动换挡 安全耐用<br/>
+                    稳定性好 抗氧化强
+                </p>
+                <p class="text3">
+                    <span class="price-now">239.00 </span>
+                    <del class="price-old">¥386.00</del>
+                </p>
+            </div>
+        </div>
+        <div class="building-no3">
+            <div class="building-item-left">
+                <div class="building-img-container">
+                    <img src="./images/c3.png" alt="c1" class="building-item-img">
+                </div>
+                <input type="button" class="btn-buy">
+            </div>
+            <div class="building-item-text">
+
+                <p class="text1">
+                    好太太晾衣架 铝钛合金 升降双杆
+                </p>
+                <p class="text2">
+                    自动换挡 安全耐用<br/>
+                    稳定性好 抗氧化强
+                </p>
+                <p class="text3">
+                    <span class="price-now">239.00 </span>
+                    <del class="price-old">¥386.00</del>
+                </p>
+            </div>
+        </div>
+        <div class="building-no4">
+            <div class="building-item-left">
+                <div class="building-img-container">
+                    <img src="./images/c4.png" alt="c1" class="building-item-img">
+                </div>
+                <input type="button" class="btn-buy">
+            </div>
+            <div class="building-item-text">
+
+                <p class="text1">
+                    好太太晾衣架 铝钛合金 升降双杆
+                </p>
+                <p class="text2">
+                    自动换挡 安全耐用<br/>
+                    稳定性好 抗氧化强
+                </p>
+                <p class="text3">
+                    <span class="price-now">239.00 </span>
+                    <del class="price-old">¥386.00</del>
+                </p>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+    </div>
+    <div class="building-sidebar">
+        <dl>
+            <dt>建材资讯</dt>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+            <dd><a href="#">贵阳钢铁市场7月17日价格行情</a></dd>
+        </dl>
+    </div>
+</div>
+
+<div class="split-line"></div>
+
+<div class="friends-link clear-fix">
+    <div class="friend-hint"><span>友情链接：</span></div>
+    <div class="all-link">
+        <dl>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+            <dd><a href="#">百里守月</a></dd>
+        </dl>
+    </div>
+
+</div>
+<div class="heavy-split"></div>
+
+<div class="about-us">
+    <ul>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+    </ul>
+</div>
+<!--<hr>-->
+<p class="bottom1">中国建网 版权所有 2000-20012 服务热线：0571-98899898 请与我们联系：server@163.com</p>
+
+<p class="bottom2">建材网会员互动群：<span>12312313213</span>本网实名:中建网</p>
 </body>
 </html>
